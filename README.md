@@ -2,11 +2,7 @@
 
 Mi repositorio: https://github.com/Eloy31st/Proyecto_Problema_De_La_Parada.git
 
-Realiza en código Java lo que describe el siguiente video:
-
-https://www.youtube.com/watch?v=92WHN-pAFCs
-
-Te doy una pista:
+## Presentación Problema
 
 El problema de parar
 Alan Turing probó la existencia de problemas indecibles en 1936 al encontrar un ejemplo, el hoy en día famoso "problema de parar":
