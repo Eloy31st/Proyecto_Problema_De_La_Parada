@@ -1,3 +1,8 @@
+package Estado;
+
+import Transicion.TransicionMaquina;
+
+//Utilizacion de patron state: Clase concreta
 public class EstadoMaquina implements Estado{
     private boolean esFinal;
     private TransicionMaquina[] transiciones;

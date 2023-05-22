@@ -1,6 +1,11 @@
+package Transicion;
+
+import Estado.EstadoMaquina;
+
+//Utilizacion de patron strategy: Clase concreta de estrategia de direccion de transicion
 public class TransicionMaquina {
     public enum Direccion{
-        izquierda, derecha, none
+        izquierda, derecha
     }
 
     private char simbolo;

@@ -1,6 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
+package MaquinaTuring;
 
+import Estado.EstadoMaquina;
+import Observer.Observer;
+import Transicion.TransicionMaquina;
+
+import java.util.ArrayList;
+
+//Utilizacion de patron observer: Clase observada
 public class MaquinaTuring {
     private ArrayList<Observer> observadores;
     private String cadena;
@@ -55,9 +61,12 @@ public class MaquinaTuring {
 
             estado = transicion.getSiguienteEstado();
             notificarObservadores();
-        }
 
-        System.out.println("La máquina ha terminado de ejecutarse en su estado final");
+            if(estado.esFinal()){
+                System.out.println("La máquina ha terminado de ejecutarse en su estado final");
+                return;
+            }
+        }
     }
 
     private void notificarObservadores() {
